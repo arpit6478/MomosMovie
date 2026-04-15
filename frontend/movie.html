@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Movie Details - Momo's Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="back-btn">← Back</a>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Momo's Movie" onerror="this.src='https://via.placeholder.com/120x40/ff0000/ffffff?text=MOMO'">
+            </div>
+            <div style="width: 50px;"></div>
+        </div>
+    </header>
+
+    <main id="movieDetail">
+        <!-- Movie details will be loaded here -->
+        <div class="loading">Loading...</div>
+    </main>
+
+    <!-- Sticky Bottom Ad -->
+    <div class="sticky-ad" id="stickyAd">
+        <div class="ad-placeholder">Advertisement</div>
+        <button class="close-ad" onclick="closeStickyAd()">✕</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
