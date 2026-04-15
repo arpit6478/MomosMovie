@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Momo's Movie - Watch Free Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Momo's Movie" onerror="this.src='https://via.placeholder.com/120x40/ff0000/ffffff?text=MOMO'">
+            </div>
+            <div class="header-actions">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <h1>Watch Free Movies & TV Shows</h1>
+            <p>Stream your favorite content in HD quality</p>
+        </div>
+    </section>
+
+    <!-- Ad Banner Top -->
+    <div class="ad-banner">
+        <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="Movie">Movies</button>
+                <button class="category-btn" data-category="Series">Series</button>
+                <button class="category-btn" data-category="Drama">Drama</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Grid -->
+    <section class="movies-section">
+        <div class="container">
+            <h2 class="section-title">Latest Releases</h2>
+            <div class="movies-grid" id="moviesGrid">
+                <!-- Movies will be loaded here -->
+                <div class="loading">Loading movies...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Native Ad -->
+    <div class="native-ad">
+        <div class="container">
+            <div class="ad-placeholder">Sponsored Content</div>
+        </div>
+    </div>
+
+    <!-- Sticky Bottom Ad -->
+    <div class="sticky-ad" id="stickyAd">
+        <div class="ad-placeholder">Advertisement</div>
+        <button class="close-ad" onclick="closeStickyAd()">✕</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
